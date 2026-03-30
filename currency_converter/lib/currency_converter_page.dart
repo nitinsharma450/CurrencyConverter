@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 
 
-class currencyConverterPage extends StatefulWidget{
-   const currencyConverterPage({super.key});
+class CurrencyConverterPage extends StatefulWidget{
+   const CurrencyConverterPage({super.key});
 
  @override
-  State<currencyConverterPage> createState() {
-   return _currencyConverterPageState();
+  State<CurrencyConverterPage> createState() {
+   return _CurrencyConverterPageState();
   }}
-  class _currencyConverterPageState extends State<currencyConverterPage>{
+  class _CurrencyConverterPageState extends State<CurrencyConverterPage>{
 
 double result=0;
   final TextEditingController controller=TextEditingController();
@@ -61,7 +61,7 @@ double result=0;
 
 TextButton(
   onPressed: () {
-  convert;
+  convert();
   },
   child: const Text("Convert"),
   style: ButtonStyle(
